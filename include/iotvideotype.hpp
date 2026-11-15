@@ -367,11 +367,11 @@ public:
 
 typedef std::map<VidSrcFrameCallback *, VidSrcFrameCallback *> VidFrameCallbackMap;
 
-class IvegStreamCallback
+class VidOnStreamCallback
 {
 public:
-	IvegStreamCallback(){}
-	virtual ~IvegStreamCallback(){}
+	VidOnStreamCallback(){}
+	virtual ~VidOnStreamCallback(){}
 
 public:
 	virtual bool OnRegStreamCallback(std::string strToken, VideoNetStreamType nStream, VidSrcFrameCallback *pCallback)  = 0;
